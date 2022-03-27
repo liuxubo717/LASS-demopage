@@ -1,0 +1,29 @@
+lass1: a person shouts nearby and then emergency vehicle sirens sounds
+human1: a man is speaking with ambulance and police siren sound in the background
+
+lass2: a motor vibrates and then revs up and down
+human2: the engine sound of a vehicle
+
+lass3: people laugh followed by people singing while music plays
+human3: a music show is presenting to the public
+
+lass4: someone is typing on a keyboard
+human4: the sound of hitting the keyboard
+
+lass5: distant claps of thunder with rain falling and a man speaking
+human5: very rainy and a man is talking dirty words in the background
+
+lass6: heavy wind and birds chirping
+human6: a bird is chirping under the thunder storm
+
+lass7: applauding followed by people singing and a tambourine
+human7: a show start with audience applausing and then singing
+
+lass8: a woman is giving a speech
+human8: a female is speaking with clearing throat sounds
+
+lass9: church bells ringing
+human9: someone is striking a large church bell
+
+lass10: an adult male is laughing
+human10: a man is laughing really hard
