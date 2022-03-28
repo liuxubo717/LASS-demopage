@@ -140,10 +140,9 @@
       </script>
    </head>
    <body>
-      <br>
       <br><br>
       <center>
-         <span style="font-size:32px"><b>Separate What You Describe: Language-Queried Audio Source Separation</b></span>
+         <span style="font-size:33px"><b>Separate What You Describe: Language-Queried Audio Source Separation</b></span>
          <br>
          <br>
          <table align=center width=800px>
@@ -226,10 +225,10 @@
          <tr>
             <td>
                <p>
-                  In this paper, we introduce the task of language-queried audio source separation (LASS), which aims to separate the target source from an audio mixture with a natural language query (e.g., ''<i>a man tells a joke followed by people laughing</i>'').
+                  In this paper, we introduce the task of language-queried audio source separation (LASS), which aims to separate a target source from an audio mixture based on a natural language query of the target source (e.g., ''<i>a man tells a joke followed by people laughing</i>'').
                   A unique challenge in LASS is associated with the complexity of natural language description and its relation with the audio sources.
-                  To address this issue, we proposed LASS-Net, an end-to-end neural network that is learned to jointly process acoustic and linguistic information, and separate the target source from an audio mixture that is consistent with the language query.
-                  We evaluate the performance of our proposed system with a dataset created from <a href="https://audiocaps.github.io/">AudioCaps</a>. Experimental results show that LASS-Net achieves considerable improvements over baseline methods.
+                  To address this issue, we proposed LASS-Net, an end-to-end neural network that is learned to jointly process acoustic and linguistic information, and separate the target source that is consistent with the language query from an audio mixture.
+                  We evaluate the performance of our proposed system with a dataset created from the <a href="https://audiocaps.github.io/">AudioCaps</a> dataset. Experimental results show that LASS-Net achieves considerable improvements over baseline methods.
                   Furthermore, we observe that LASS-Net achieves promising generalization results when using diverse human-annotated descriptions as queries, indicating its potential use in real-world scenarios.
                </p>
             </td>
@@ -245,7 +244,7 @@
          <tr>
             <td>
                <p>In this work, we present LASS-Net, which is learned to jointly process acoustic and linguistic information, and separate the target source described by the natural language expressions.
-                  In LASS-Net, a Transformer-based query network is used to encode the language expression into a query embedding, and a ResUNet-based separation network is then used to separate the target source from mixture conditioned on the query embedding.
+                  In LASS-Net, a Transformer-based query network (QueryNet) is used to encode the language expression into a query embedding, and a ResUNet-based separation network (SeparationNet) is then used to separate the target source from mixture conditioned on the query embedding.
                   The architecture of our proposed model is illustrated as follows.
                </p>
             </td>
@@ -266,6 +265,18 @@
       </center>
       <!--      for wav and img demonstration-->
       <table align=center width=1200px>
+         <tr>
+            <td align=left width=1200px>
+               We demonstrate the audio samples separated by our proposed LASS-Net. There are four audio clips for each example:<br><br>
+               (a) audio mixture<br><br>
+               (b) separated audio source queried by AudioCaps description <br><br>
+               (c) separated audio sources queried by our collected human description <br><br>
+               (d) ground truth target source.
+               <br><br><br><br>
+            </td>
+         </tr>
+
+
          <tr>
             <td align=left width=1200px>
                Language Query (AudioCaps): ''<i>A person shouts nearby and then emergency vehicle sirens sounds</i>''<br><br>
